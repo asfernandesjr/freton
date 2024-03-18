@@ -1,0 +1,50 @@
+[
+  {
+    "model": "freton.DrivingCategory",
+    "pk": 1,
+    "fields": {
+      "category": "ACC",
+      "description": "É a autorização para conduzir ciclomotor que permite ao cidadão dirigir veículo de duas ou três rodas, provido de um motor de combustão interna, cuja cilindrada não exceda a cinqüenta centímetros cúbicos (3,05 polegadas cúbicas) e cuja velocidade máxima de fabricação não exceda a cinqüenta quilômetros por hora."
+    }
+  },
+  {
+    "model": "freton.DrivingCategory",
+    "pk": 2,
+    "fields": {
+      "category": "A",
+      "description": "Condutor de veículo motorizado de duas ou três rodas, com ou sem carro lateral."
+    }
+  },
+  {
+    "model": "freton.DrivingCategory",
+    "pk": 3,
+    "fields": {
+      "category": "B",
+      "description": "Condutor de veículo motorizado, não abrangido pela categoria A, cujo peso bruto total não exceda a 3.500 kg e cuja lotação não exceda a 8 lugares, excluído o do motorista."
+    }
+  },
+  {
+    "model": "freton.DrivingCategory",
+    "pk": 4,
+    "fields": {
+      "category": "C",
+      "description": "Condutor de veículo abrangido pela categoria B e de veículo motorizado utilizado em transporte de carga cujo peso bruto total exceda a 3.500 kg (três mil e quinhentos quilogramas)."
+    }
+  },
+  {
+    "model": "freton.DrivingCategory",
+    "pk": 5,
+    "fields": {
+      "category": "D",
+      "description": "Condutor de veículo abrangido pelas categorias B e C e de veículo motorizado utilizado no transporte de passageiros cuja lotação exceda a 8 (oito) lugares, excluído o do motorista."
+    }
+  },
+  {
+    "model": "freton.DrivingCategory",
+    "pk": 6,
+    "fields": {
+      "category": "E",
+      "description": "Condutor de combinação de veículos em que a unidade tratora se enquadre nas categorias B, C ou D e cuja unidade acoplada, reboque, semirreboque, trailer ou articulada tenha 6.000 kg ou mais de peso bruto total, ou cuja lotação exceda a 8 lugares."
+    }
+  }
+]
