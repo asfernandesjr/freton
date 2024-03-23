@@ -19,7 +19,7 @@ class CPFValidator:
         
     
     def __call__(self, value):
-        if re.fullmatch('^\d+$', value) and len(value) == 11:
+        if re.fullmatch('^\d{11}$', value):
             self.terms = [int(term) for term in list(value)]
             
             if all(term == self.terms[0] for term in self.terms):
@@ -54,7 +54,7 @@ class DriverLicenseRegisterNumberValidator:
         return check_digit2
     
     def __call__(self, value):
-        if re.fullmatch('^\d+$', value) and len(value) == 9:
+        if re.fullmatch('^\d{9}$', value):
             self.terms = [int(term) for term in list(value)]
             
             if all(term == self.terms[0] for term in self.terms):

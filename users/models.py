@@ -32,6 +32,9 @@ class User(AbstractUser, BaseModel):
     
     REQUIRED_FIELDS = ['email', 'name', 'cpf', 'date_of_birth']
     
+    def __str__(self) -> str:
+        return self.name
+    
     class Meta:
         verbose_name = _('User')
         verbose_name_plural = _('Users')
@@ -44,6 +47,9 @@ class DrivingCategory(CoreModel):
         max_length=4,
     )
     description  = models.TextField(_('description'), blank=True)
+    
+    def __str__(self) -> str:
+        return self.category
 
     class Meta:
         verbose_name = _('Driving category')
@@ -66,6 +72,9 @@ class DrivingLicense(BaseModel):
         _('validity date'),
     )
     categories = models.ManyToManyField(DrivingCategory)
+    
+    def __str__(self) -> str:
+        return self.register_number
     
     class Meta:
         verbose_name = _('Driving license')

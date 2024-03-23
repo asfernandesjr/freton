@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from django.utils import timezone
 
 from core.models import BaseModel
 
@@ -16,3 +17,9 @@ class BaseSerializer(serializers.Serializer):
     )
     created_at = serializers.ReadOnlyField()
     updated_at = serializers.ReadOnlyField()
+    # created_at = serializers.HiddenField(
+    #     default=serializers.CreateOnlyDefault(timezone.now())
+    # )
+    # updated_at = serializers.HiddenField(
+    #     default=timezone.now()
+    # )

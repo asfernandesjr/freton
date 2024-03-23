@@ -117,6 +117,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
     'EXCEPTION_HANDLER': 'core.exceptions.django_validation_error_handler',
+    'NON_FIELD_ERRORS_KEY': 'detail',
 }
 
 

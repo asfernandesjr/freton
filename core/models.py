@@ -1,5 +1,4 @@
 from django.db import models
-from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 
 class CoreModel(models.Model):
@@ -19,7 +18,7 @@ class BaseModel(CoreModel):
     )
     created_at = models.DateTimeField(
         _('created at'),
-        default=timezone.now
+        auto_now_add=True
     )
     updated_at = models.DateTimeField(
         _('updated at'),
